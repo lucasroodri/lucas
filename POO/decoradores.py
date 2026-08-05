@@ -1,4 +1,4 @@
-def decorador1(funcion):
+def decorador(funcion):
     def funcion_modificada():
         print("Antes de llamar a la funcion")
         funcion()
@@ -11,7 +11,7 @@ def decorador1(funcion):
 #hola_modificado = decorador(hola_mundo)
 #hola_modificado()
 
-@decorador1
+@decorador
 def saludo():
     print("Hola mundo")
 
