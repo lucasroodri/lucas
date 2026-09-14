@@ -28,17 +28,14 @@ void vTimerCallback(TimerHandle_t pxTimer){ //Callback del Timer
   dutyR += 10;
   if(dutyR > 1023){
     dutyR = 0;
-    ESP_LOGE(tag, "R");
   }
   dutyG += 10;
   if(dutyG > 1023){
     dutyG = 0;
-    ESP_LOGE(tag, "G");
   }
   dutyB += 10;
   if(dutyB > 1023){
     dutyB = 0;
-    ESP_LOGE(tag, "B");
   }
 
   blink_led();
